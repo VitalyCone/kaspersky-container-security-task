@@ -35,8 +35,12 @@
 Сторонние библиотеки в программе не используются, есть только testify для тестирования workerpool
 
 ## Запуск:
-`task run` # если есть task
+```
+task run # если есть task
+```
 или
-`go run cmd/workerpool/main.go --port 8080`
+```
+go run cmd/workerpool/main.go --port 8080
+```
 
 Доступны `localhost:8080/enqueue` и `localhost:8080/healthz`
