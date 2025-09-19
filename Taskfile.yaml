@@ -1,0 +1,15 @@
+version : "3"
+
+tasks:
+  run:
+    aliases:
+      - run
+    desc : "run worker pool"
+    cmds:
+      - go run cmd/workerpool/main.go --port 8080
+
+  test_workerpool:
+    desc : "test worker pool"
+    cmds:
+      - go test ./internal/workerpool
+      
